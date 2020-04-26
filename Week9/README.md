@@ -136,3 +136,11 @@ int main()
 
 <img src="figures/q3_fig.png" width="250">
 
+### Q4 - (Teaching Codes PS11-Ex2)
+
+* User enters a sequence of characters. You want to count the lowercase and the uppercase letters in this sequence. The sequence is finished when % is entered. You should ignore all other characters.
+
+**Sample Input-Output:**
+
+<img src="figures/q4_fig.png" width="350">
+
