@@ -102,6 +102,19 @@ int main()
 
 </details>
 
+## Questions
+
+### Q1 - Understanding Arrays (Teaching Codes Lab7-Ex1)
+
+* Write a program which reads a sentence from the user (read characters until '\n' appears).Your program then should put this sentence into a char array (assume the sentence will be shorter than 50 characters). 
+
+* Then, encrypt this sentence by adding +1 to the value of each character.Then print the encrypted version to the screen. 
+
+* Then decrypt this sentence by adding -1 to each character, and print the decrypted version again to the screen. 
+
+**Sample Input-Output:**
+
+<img src="figures/q1_fig.png" width="100">
 
 
 
