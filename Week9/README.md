@@ -114,7 +114,25 @@ int main()
 
 **Sample Input-Output:**
 
-<img src="figures/q1_fig.png" width="100">
+<img src="figures/q1_fig.png" width="250">
 
 
+### Q2 - Reversing Elements of an Array (Teaching Codes Lab7-Ex2)
+
+* Write a program which reads an integer N from the user, then reads N integers from the user. Then your program should put these N integers into reverse order and print them to the screen. Assume N is smaller than 50. 
+
+**Sample Input-Output:**
+
+<img src="figures/q2_fig.png" width="250">
+
+
+### Q3 - Finding a Sequence in Another Sequence (Teaching Codes Lab7-Ex3)
+
+* Write a program which reads two integers: N and M from the user. Then the program should readN more integers, then M more integers from the user. Assume N<M<50. 
+
+* If the first combination of N integers appears at least once in the second combination of M integers, the program should write the starting index of the first appearance in the second combination. Otherwise it should not print anything. 
+
+**Sample Input-Output:**
+
+<img src="figures/q3_fig.png" width="250">
 
