@@ -2,9 +2,10 @@
 # Week 9 Notes - 29.04.2020
 ---
 
+## A Brief Summary of Arrays
 <details>
 
-<summary>Arrays </summary>
+<summary>  </summary>
 
 <br>
 
