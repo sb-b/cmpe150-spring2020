@@ -136,11 +136,27 @@ int main()
 
 <img src="figures/q3_fig.png" width="250">
 
-### Q4 - (Teaching Codes PS11-Ex2)
+### Q4 - Counting Uppercase and Lowercase Letters in a Sequence (Teaching Codes PS11-Ex2)
 
-* User enters a sequence of characters. You want to count the lowercase and the uppercase letters in this sequence. The sequence is finished when % is entered. You should ignore all other characters.
+* Write a program the reads a sequence of characters. Write a program that counts the lowercase and the uppercase letters in this sequence. The sequence is finished when % is entered. You should ignore all other characters.
 
 **Sample Input-Output:**
 
 <img src="figures/q4_fig.png" width="350">
 
+### Q5 - Deleting an Element in an Array 
+
+* Write a function named **delete_element** which takes an array, length of this array and an index as parameters and deletes the element at desired position from the array.
+
+**Sample Input-Output:**
+
+<img src="figures/q5_fig.png" width="200">
+
+### Q6 - Deleting the Smallest Element in a Sub-array
+
+* Write a program that reads an integer N from the user, then N integers from the user, and finally two integers L and H from the user.
+Write a program that deletes the smallest element in a sub-array of the integer array. The sub-array consists of the array cells indexed between indices L and H, inclusive. (You may want to use the **delete_element** function in the previous example.)
+
+**Sample Input-Output:**
+
+<img src="figures/q6_fig.png" width="300">
