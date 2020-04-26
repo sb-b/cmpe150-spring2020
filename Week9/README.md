@@ -9,14 +9,17 @@
 <br>
 
 * An array is a group of memory locations.
-- These locations are related by the fact that they have all the same name and same type.
-- To refer (access) to a particular location, i.e., an element within the array, specify the name of the array and the position number (index) of the variable in square brackets. 
+* These locations are related by the fact that they have all the same name and same type.
+* We can define an array as follows:
 
-* Syntax of an array:
    - type arrName[size];
-     * Where, type is any data type like int, float etc. 
-     * arrName is the name of the array variable.
-     * The square brackets contains an integer value "size".  "size" is the total number of values we can store in the array variable.
+   
+     * Where, **type** is any data type like int, float etc. 
+     * **arrName** is the name of the array variable.
+     * The square brackets contains an integer value **size**. It is the total number of values we can store in the array variable.
+     
+* In order to access to a particular location, i.e., an element within the array, we specify the name of the array and the position number (index) of the variable in square brackets.
+   
 
 ### Example: 
 
@@ -35,7 +38,7 @@ int main()
 
 * The above code allocates memory space for 10 integer data values:
 
-![](figures/array_fig1.png)
+<img src="figures/array_fig1.png" width="150">
 
 * Now, let's assign digits from 0 to 9 to the corresponding locations in our digit array:
 
@@ -55,7 +58,7 @@ int main()
 ```
 * We can represent the values in the digit array as follows:
 
-![](figures/array_fig2.png)
+<img src="figures/array_fig2.png" width="150">
 
 * We can change the values in the arrays as we want. Let's multiply each element of the digit array with two and then add 1:
 
@@ -75,7 +78,7 @@ int main()
 ```
 * Now our digit array looks like this:
 
-![](figures/array_fig3.png)
+<img src="figures/array_fig3.png" width="150">
 
 * Let's change the value of the tenth element of the digit array.
 ```c 
@@ -95,7 +98,7 @@ int main()
 ```
 * The digit array now looks as follows:
 
-![](figures/array_fig4.png)
+<img src="figures/array_fig4.png" width="150">
 
 </details>
 
