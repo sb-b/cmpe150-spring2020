@@ -48,9 +48,9 @@ int main()
 
 int main()
 {
-     int digit[10];
+     int digit[10], i;
      
-     for(int i = 0; i < 10; i++)
+     for(i = 0; i < 10; i++)
          digit[i] = i;
      
      
@@ -68,9 +68,9 @@ int main()
 
 int main()
 {
-     int digit[10];
+     int digit[10], i;
      
-     for(int i = 0; i < 10; i++)
+     for(i = 0; i < 10; i++)
          digit[i] = 2*i+1;
         
      
@@ -87,9 +87,9 @@ int main()
 
 int main()
 {
-     int digit[10];
+     int digit[10], i;
      
-     for(int i = 0; i < 10; i++)
+     for(i = 0; i < 10; i++)
          digit[i] = 2*i+1;
         
      digit[9] = 100;
