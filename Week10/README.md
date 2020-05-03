@@ -279,7 +279,7 @@ int main()
      
 * Let's look at the following example:
 
-## Example: 2-dim Array
+### Example: 2-dim Array
 
 ```c
 #include <stdio.h>
