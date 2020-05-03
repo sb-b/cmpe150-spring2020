@@ -322,7 +322,7 @@ int main()
 
 
 <br>
-</details>
+
 
 ## Multidimensional Arrays with Functions
 
@@ -371,6 +371,7 @@ The output will be:
 1 2 3 4 5<br/>
 2 3 4 5 6
 
+</details>
 ## Questions
 
 ### Question 1 - Pairs (A modified 7th question from previous lab)
