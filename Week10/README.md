@@ -372,6 +372,7 @@ The output will be:
 2 3 4 5 6
 
 </details>
+
 ## Questions
 
 ### Question 1 - Pairs (A modified 7th question from previous lab)
@@ -446,9 +447,17 @@ Write a program which reads two integers N, M, and a 2-dimensional array with si
 | 2 3 <br> 5 2 4<br>1 4 0 | 5 1<br>2 4<br>4 0|
 
 
-### Question 2
+### Question 5 - 2D Arrays with Functions
 
 Write a function named **print_2d_array()** which takes the sizes of a 2-dimensional array and an array as parameters and prints it.
 
 Write a function named **read_2d_array()** which takes the sizes of a 2-dimensional array and an array as parameters and reads its content from the user.
+
+### Question 6 - Matrix Addition
+
+Write a program that reads two integers N and M, and then reads two 2-dimensional integer arrays with the size NxM from the user. The program then performs the matrix addition on these two 2d arrays and prints the result.
+
+|  INPUT  |  OUTPUT |
+|-------|-------|
+|2 4 <br><br> 1 1 1 2<br>1 2 3 4<br><br>6 6 6 5<br>6 5 4 3|7 7 7 7<br>7 7 7 7|
 
