@@ -320,8 +320,56 @@ int main()
     .<br/>
     arr[2][4] : 15<br/>
 
+
 <br>
 </details>
+
+## Multidimensional Arrays with Functions
+
+* When defining a function that takes a multidimensional array as an argument, we need to specify the size of each dimension other than the first one. 
+
+### Example:
+
+* The following example shows a function named *sumIndices* which takes a 2-dim array and the sizes of its dimensions as arguments, and then fills the array by assigning the element in the i'th row and the j'th column with the sum of i and j.
+
+```c
+#include <stdio.h>
+
+void sumIndices(int arr[][5], int N, int M)
+{
+   int i, j;
+   
+   for(i = 0; i < N; i++)
+   {
+       for(j = 0; j < M; j++)
+          arr[i][j] = i+j; 
+   }
+}
+int main()
+{
+    int arr[3][5];
+   
+    int i,j;
+    
+    
+    sumIndices(arr,3,5);
+    
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 5; j++)
+            printf("%d ",arr[i][j]);
+        printf("\n");
+    }
+    
+    return 0;
+}
+```
+
+The output will be:
+
+0 1 2 3 4<br/>
+1 2 3 4 5<br/>
+2 3 4 5 6
 
 ## Questions
 
