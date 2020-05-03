@@ -9,7 +9,126 @@
 
 <br>
 
-* An array is a group of memory locations.
+* Arrays are always *passed by reference* to a function.
+   - Remember: the name of an array (let's say arrName) is actually equivalent to the address of the first element of the array, i.e., 
+    arrName is equal to &arrName[0]
+    
+* Three ways of passing an array to a function:
+
+   -(1) as a pointer,
+   -(2) as a sized array,
+   -(3) as an unsized array.
+   
+* Actually, these three methods all imply the same thing. Let's give an example to each method:
+
+### Example 1: Passing array as a pointer:
+
+```c 
+#include <stdio.h>
+
+void printArray(int *arr, int len)
+{
+    int i;
+   for(i = 0; i < len; i++)
+   {
+      printf("%d ",*arr);
+      arr++;
+   }
+}
+int main()
+{
+    int myArr[5] = {1, 5, 6, 2, 2};
+    
+    printArray(myArr, 5);
+
+    return 0;
+}
+```
+The output will be:
+1 5 6 2 2 
+
+### Example 2: Passing array as a sized array:
+
+```c 
+#include <stdio.h>
+
+void printArray(int arr[5], int len)
+{
+    int i;
+   for(i = 0; i < len; i++)
+   {
+      printf("%d ",*arr);
+      arr++;
+   }
+}
+int main()
+{
+    int myArr[5] = {1, 5, 6, 2, 2};
+    
+    printArray(myArr, 5);
+
+    return 0;
+}
+```
+The output will be:
+1 5 6 2 2 
+
+* Writing any other number inside the curly brackets in the function definition does not alter the result:
+
+
+```c 
+#include <stdio.h>
+
+void printArray(int arr[2], int len)
+{
+    int i;
+   for(i = 0; i < len; i++)
+   {
+      printf("%d ",*arr);
+      arr++;
+   }
+}
+int main()
+{
+    int myArr[5] = {1, 5, 6, 2, 2};
+    
+    printArray(myArr, 5);
+
+    return 0;
+}
+```
+The output will be:
+1 5 6 2 2 
+
+* This is because the compiler does not care the given size in the function definition.
+
+### Example 3: Passing array as an unsized array:
+
+```c 
+#include <stdio.h>
+
+void printArray(int arr[], int len)
+{
+    int i;
+   for(i = 0; i < len; i++)
+   {
+      printf("%d ",*arr);
+      arr++;
+   }
+}
+int main()
+{
+    int myArr[5] = {1, 5, 6, 2, 2};
+    
+    printArray(myArr, 5);
+
+    return 0;
+}
+```
+The output again will be:
+1 5 6 2 2 
+
+* Returning an array from a function:
 
 
 ### Example: 
