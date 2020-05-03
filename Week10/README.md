@@ -268,6 +268,58 @@ int main()
 
 <summary> Multidimensional Arrays </summary>
 
+* We will only consider the 2-dimensional arrays. 
+* We can define a 2-dim array as follows:
+
+  - type arrName[rowSize][columnSize];
+   
+     * Where, **type** is any data type like int, float etc. 
+     * **arrName** is the name of the array variable.
+     * **rowSize** is a number denoting the number of rows and **columnSize** denotes the number of columns in a 2-dimensional array.
+     
+* Let's look at the following example:
+
+## Example: 2-dim Array
+
+```c
+#include <stdio.h>
+int main()
+{
+    int arr[3][5] = {{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15}}; 
+    // we can also initialize the array as follows: int arr[3][5] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};  
+   
+    int i,j;
+    
+    
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 5; j++)
+            printf("%d ",arr[i][j]);
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+* The output will be:
+       
+    1 2 3 4 5 <br/>
+    6 7 8 9 10 <br/>
+    11 12 13 14 15
+    
+* Let's look inside the each element of the array:
+
+    arr[0][0] : 1 <br/>
+    arr[0][1] : 2<br/>
+    .<br/>
+    .<br/>
+    .<br/>
+    arr[1][3] : 9<br/>
+    .<br/>
+    .<br/>
+    .<br/>
+    arr[2][4] : 15<br/>
+
 <br>
 </details>
 
