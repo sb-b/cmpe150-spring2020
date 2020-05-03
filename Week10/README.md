@@ -436,3 +436,18 @@ Third Pass:
 * ( 1 2 **4** **5** 8 ) –> ( 1 2 **4** **5** 8 )
 * ( 1 2 4 **5** **8** ) –> ( 1 2 4 **5** **8** )
 
+### Question 4 - Transpose of a Matrix
+
+Write a program which reads two integers N, M, and a 2-dimensional array with size NxM from the user and prints its transpose.
+
+|  INPUT  |  OUTPUT |
+|-------|-------|
+| 2 3 <br> 5 2 4<br>1 4 0 | 5 1<br>2 4<br>4 0|
+
+
+### Question 2
+
+Write a function named **print_2d_array()** which takes the sizes of a 2-dimensional array and an array as parameters and prints it.
+
+Write a function named **read_2d_array()** which takes the sizes of a 2-dimensional array and an array as parameters and reads its content from the user.
+
