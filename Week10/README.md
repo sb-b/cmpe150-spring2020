@@ -15,9 +15,11 @@
     
 * Three ways of passing an array to a function:
 
-   -(1) as a pointer,
-   -(2) as a sized array,
-   -(3) as an unsized array.
+   - (1) as a pointer,
+   
+   - (2) as a sized array,
+   
+   - (3) as an unsized array.
    
 * Actually, these three methods all imply the same thing. Let's give an example to each method:
 
@@ -47,6 +49,22 @@ int main()
 The output will be:
 1 5 6 2 2 
 
+* Printing the elements of the array with the following way is also valid:
+
+```c 
+#include <stdio.h>
+
+void printArray(int *arr, int len)
+{
+    int i;
+   for(i = 0; i < len; i++)
+   {
+      printf("%d ", arr[i]);
+      arr++;
+   }
+}
+```
+
 ### Example 2: Passing array as a sized array:
 
 ```c 
@@ -57,8 +75,8 @@ void printArray(int arr[5], int len)
     int i;
    for(i = 0; i < len; i++)
    {
-      printf("%d ",*arr);
-      arr++;
+      printf("%d ",arr[i]);
+      
    }
 }
 int main()
@@ -84,8 +102,8 @@ void printArray(int arr[2], int len)
     int i;
    for(i = 0; i < len; i++)
    {
-      printf("%d ",*arr);
-      arr++;
+      printf("%d ",arr[i]);
+   
    }
 }
 int main()
@@ -112,8 +130,8 @@ void printArray(int arr[], int len)
     int i;
    for(i = 0; i < len; i++)
    {
-      printf("%d ",*arr);
-      arr++;
+      printf("%d ",arr[i]);
+     
    }
 }
 int main()
@@ -128,28 +146,120 @@ int main()
 The output again will be:
 1 5 6 2 2 
 
-* Returning an array from a function:
+## Returning an array from a function:
 
+* In C, we cannot return an entire array directly from a function. However, we can return a pointer to an array by specifying the array's name without an index. Let's see an example:
 
-### Example: 
+### Example:
 
-* We want to create an array named digit of size 10 and type as int.
-
-```c 
+```c
 #include <stdio.h>
 
+int * doubleArray(int arr[], int len)
+{
+   int i;
+   for(i = 0; i < len; i++)
+   {
+      arr[i] = arr[i]*2;
+   }
+   return arr;
+}
 int main()
 {
-     int digit[10];
-     
-   return 0;
+    int arr[5] = {1, 5, 6, 2, 2};
+    int * doubled;
+    int i;
+    
+    doubled = doubleArray(arr, 5);
+    
+    for(i = 0; i < 5; i++)
+    {
+       printf("%d ",doubled[i]);
+    }
+
+    return 0;
+}
+```
+* The output will be:
+2 10 12 4 4 
+
+* If we want to return a local array defined in the function, we have to define it as static. Let's look at the following two examples to understand the difference:
+
+```c
+#include <stdio.h>
+
+int * getArray()
+{
+   int i;
+   int arr[5];
+   
+   for(i = 0; i < 5; i++)
+   {
+      arr[i] = i+1;
+   }
+   return arr;
+}
+int main()
+{
+    int * arr;
+   
+    int i;
+    
+    arr = getArray();
+    
+    for(i = 0; i < 5; i++)
+    {
+       printf("%d ",arr[i]);
+    }
+
+    return 0;
 }
 ```
 
-* The above code allocates memory space for 10 integer data values:
+* In the example above, we define a local array *arr* inside the function *getArray*, assign and then return it to the main function. When we run the program, we will get a warning saying:
 
-<img src="figures/array_fig1.png" width="150">
+ *warning: function returns address of local variable*
+ 
+ * This is because it is illegal in C to return memory location that is allocated within a function. When we run this program, the output looks weird:
 
+1 2 6277760 0 5
+
+* In order to overcome this problem, we need to define the array as static inside the function:
+
+```c
+#include <stdio.h>
+
+int * getArray()
+{
+   int i;
+   static int arr[5];
+   
+   for(i = 0; i < 5; i++)
+   {
+      arr[i] = i+1;
+   }
+   return arr;
+}
+int main()
+{
+    int * arr;
+   
+    int i;
+    
+    arr = getArray();
+    
+    for(i = 0; i < 5; i++)
+    {
+       printf("%d ",arr[i]);
+    }
+
+    return 0;
+}
+```
+
+* Now we get the desired output:
+
+1 2 3 4 5
 
 
 </details>
