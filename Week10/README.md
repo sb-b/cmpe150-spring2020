@@ -461,3 +461,10 @@ Write a program that reads two integers N and M, and then reads two 2-dimensiona
 |-------|-------|
 |2 4 <br><br> 1 1 1 2<br>1 2 3 4<br><br>6 6 6 5<br>6 5 4 3|7 7 7 7<br>7 7 7 7|
 
+### Question 7 - Diagonal Sum
+
+Write a program to find sum of left and right diagonals of a 2-dimensional array. The program should first read an integer N and then a 2d integer array of size NxN from the user.
+
+|  INPUT  |  OUTPUT |
+|-------|-------|
+|3 <br> 1 6 10<br>5 2 3<br>6 80 6|The sum of the left diagonal: 9<br>The sum of the right diagonal: 18 |
